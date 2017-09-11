@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/mondayschedule"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentStart="true"
+        >
+        <TextView
+            android:id="@+id/pause"
+            android:layout_width="match_parent"
+            android:layout_height="90dp"
+            android:text=""
+            android:textAlignment="center" />
+        <TextView
+            android:id="@+id/firstm"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_below="@+id/pause"
+            android:text="8:30-9:10: First Period"
+            android:textAlignment="center" />
+
+        <TextView
+            android:id="@+id/secondm"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_below="@+id/firstm"
+            android:text="9:10-9:50: Second Period"
+            android:textAlignment="center" />
+
+        <TextView
+            android:id="@+id/cmtng"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_below="@+id/secondm"
+            android:text="9:50-10:10: Community Meeting"
+            android:textAlignment="center" />
+
+        <TextView
+            android:id="@+id/thirdm"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_below="@+id/cmtng"
+            android:text="10:10-10:50: Third Period"
+            android:textAlignment="center" />
+
+        <TextView
+            android:id="@+id/fourthm"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_below="@+id/thirdm"
+            android:text="10:50-11:30: Fourth Period"
+            android:textAlignment="center" />
+
+        <TextView
+            android:id="@+id/mentorm"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_below="@+id/fourthm"
+            android:text="11:30-12:40: Mentor and Lunch"
+            android:textAlignment="center" />
+
+        <TextView
+            android:id="@+id/fifthm"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_below="@+id/mentorm"
+            android:text="12:40-1:20: Fifth Period"
+            android:textAlignment="center" />
+
+        <TextView
+            android:id="@+id/sixthm"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_below="@+id/fifthm"
+            android:text="1:20-2:00: Sixth Period"
+            android:textAlignment="center" />
+
+        <TextView
+            android:id="@+id/seventhm"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_below="@+id/sixthm"
+            android:text="2:00-2:40 Seventh Period"
+            android:textAlignment="center" />
+
+        <TextView
+            android:id="@+id/eightm"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_below="@+id/seventhm"
+            android:text="2:40-3:20 Eighth Period (not on Wednesday)"
+            android:textAlignment="center" />
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="justinkeller.hilltop.MainActivity">
+
+    <Button
+        android:id="@+id/birthdays"
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Birthdays"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="91dp"
+        android:layout_below="@+id/portol"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:id="@+id/portol"
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Access Portal"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="16dp"
+        android:layout_marginTop="150dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:id="@+id/settings"
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Settings"
+        app:layout_constraintTop_toBottomOf="@+id/birthdays"
+        tools:layout_editor_absoluteX="16dp"
+        android:layout_below="@+id/birthdays"
+        android:layout_alignParentStart="true" />
+    <Button
+        android:id="@+id/schedule"
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Schedule"
+        app:layout_constraintTop_toBottomOf="@+id/settings"
+        tools:layout_editor_absoluteX="16dp"
+        android:layout_below="@+id/settings"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:id="@+id/currper"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:text="Current Period"
+        android:layout_marginTop="30dp"
+        android:textSize="16pt"/>
+
+</RelativeLayout>
