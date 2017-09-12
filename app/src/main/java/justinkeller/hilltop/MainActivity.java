@@ -1,6 +1,7 @@
 package justinkeller.hilltop;
 
 import android.app.Activity;
+import android.icu.util.Calendar;
 import android.os.Bundle;
 import android.widget.Button;
 import android.widget.TextView;
@@ -42,8 +43,9 @@ public class MainActivity extends Activity {
         });
 
         final TextView cp=(TextView)findViewById(R.id.currper);
-        SimpleDateFormat df = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
-        String formattedDate = df.format(c.getTime());
+        SimpleDateFormat df = new SimpleDateFormat("HH:mm");
+
+        String formattedDate = df.format(Calendar.getInstance().getTime());
     }
 
     /**
