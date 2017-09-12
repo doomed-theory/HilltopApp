@@ -25,6 +25,10 @@
         <activity
             android:name=".periodTimes"
             android:label="@string/title_activity_period_times"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".homeworkReminder"
+            android:label="@string/title_activity_homework_reminder"
             android:theme="@style/AppTheme.NoActionBar"></activity>
     </application>
 

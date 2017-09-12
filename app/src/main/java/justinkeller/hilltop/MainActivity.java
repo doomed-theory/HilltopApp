@@ -1,5 +1,6 @@
 package justinkeller.hilltop;
 
+import android.annotation.SuppressLint;
 import android.app.Activity;
 import android.icu.util.Calendar;
 import android.os.Bundle;
@@ -8,13 +9,136 @@ import android.widget.TextView;
 import android.view.View;
 import android.content.Intent;
 import android.icu.text.SimpleDateFormat;
+
+import java.text.ParseException;
+import java.util.Date;
 public class MainActivity extends Activity {
 
+    @SuppressLint("SetTextI18n")
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        String p1b="08:30:00";
+        String p1e="19:10:00";
+        String p2b="09:10:00";
+        String p2e="09:50:00";
+        String pcb="09:50:00";
+        String pce="10:10:00";
+        String p3b="10:10:00";
+        String p3e="10:50:00";
+        String p4b="10:50:00";
+        String p4e="11:30:00";
+        String pmb="11:30:00";
+        String pme="12:40:00";
+        String p5b="12:40:00";
+        String p5e="13:20:00";
+        String p6b="13:20:00";
+        String p6e="14:00:00";
+        String p7b="14:00:00";
+        String p7e="14:40:00";
+        String p8b="14:40:00";
+        String p8e="15:20:00";
+        final TextView cp=(TextView)findViewById(R.id.currper);
+        try {
+            Date d1b=new SimpleDateFormat("HH:mm:ss").parse(p1b);
+            Date d1e=new SimpleDateFormat("HH:mm:ss").parse(p1e);
+            Date d2b=new SimpleDateFormat("HH:mm:ss").parse(p2b);
+            Date d2e=new SimpleDateFormat("HH:mm:ss").parse(p2e);
+            Date dcb=new SimpleDateFormat("HH:mm:ss").parse(pcb);
+            Date dce=new SimpleDateFormat("HH:mm:ss").parse(pce);
+            Date d3b=new SimpleDateFormat("HH:mm:ss").parse(p3b);
+            Date d3e=new SimpleDateFormat("HH:mm:ss").parse(p3e);
+            Date d4b=new SimpleDateFormat("HH:mm:ss").parse(p4b);
+            Date d4e=new SimpleDateFormat("HH:mm:ss").parse(p4e);
+            Date dmb=new SimpleDateFormat("HH:mm:ss").parse(pmb);
+            Date dme=new SimpleDateFormat("HH:mm:ss").parse(pme);
+            Date d5b=new SimpleDateFormat("HH:mm:ss").parse(p5b);
+            Date d5e=new SimpleDateFormat("HH:mm:ss").parse(p5e);
+            Date d6b=new SimpleDateFormat("HH:mm:ss").parse(p6b);
+            Date d6e=new SimpleDateFormat("HH:mm:ss").parse(p6e);
+            Date d7b=new SimpleDateFormat("HH:mm:ss").parse(p7b);
+            Date d7e=new SimpleDateFormat("HH:mm:ss").parse(p7e);
+            Date d8b=new SimpleDateFormat("HH:mm:ss").parse(p8b);
+            Date d8e=new SimpleDateFormat("HH:mm:ss").parse(p8e);
 
+            Calendar c1b=Calendar.getInstance();
+            Calendar c1e=Calendar.getInstance();
+            Calendar c2b=Calendar.getInstance();
+            Calendar c2e=Calendar.getInstance();
+            Calendar ccb=Calendar.getInstance();
+            Calendar cce=Calendar.getInstance();
+            Calendar c3b=Calendar.getInstance();
+            Calendar c3e=Calendar.getInstance();
+            Calendar c4b=Calendar.getInstance();
+            Calendar c4e=Calendar.getInstance();
+            Calendar cmb=Calendar.getInstance();
+            Calendar cme=Calendar.getInstance();
+            Calendar c5b=Calendar.getInstance();
+            Calendar c5e=Calendar.getInstance();
+            Calendar c6b=Calendar.getInstance();
+            Calendar c6e=Calendar.getInstance();
+            Calendar c7b=Calendar.getInstance();
+            Calendar c7e=Calendar.getInstance();
+            Calendar c8b=Calendar.getInstance();
+            Calendar c8e=Calendar.getInstance();
+            c1b.setTime(d1b);
+            c1e.setTime(d1e);
+            c2b.setTime(d2b);
+            c2e.setTime(d2e);
+            ccb.setTime(dcb);
+            cce.setTime(dce);
+            c3b.setTime(d3b);
+            c3e.setTime(d3e);
+            c4b.setTime(d4b);
+            c4e.setTime(d4e);
+            cmb.setTime(dmb);
+            cme.setTime(dme);
+            c5b.setTime(d5b);
+            c5e.setTime(d5e);
+            c6b.setTime(d6b);
+            c6e.setTime(d6e);
+            c7b.setTime(d7b);
+            c7e.setTime(d7e);
+            c8b.setTime(d8b);
+            c8e.setTime(d8e);
+            SimpleDateFormat df = new SimpleDateFormat("HH:mm");
+            Date x=Calendar.getInstance().getTime();
+            if(x.after(c1b.getTime())&&x.before(c1e.getTime())) {
+                cp.setText("First Period");
+            }
+            if(x.after(c2b.getTime())&&x.before(c2e.getTime())) {
+                cp.setText("Second Period");
+            }
+            if(x.after(cmb.getTime())&&x.before(cme.getTime())) {
+                cp.setText("Community Meeting");
+            }
+            if(x.after(c3b.getTime())&&x.before(c3e.getTime())) {
+                cp.setText("Third Period");
+            }
+            if(x.after(c4b.getTime())&&x.before(c4e.getTime())) {
+                cp.setText("Fourth Period");
+            }
+            if(x.after(cmb.getTime())&&x.before(cme.getTime())) {
+                cp.setText("Mentor Period");
+            }
+            if(x.after(c5b.getTime())&&x.before(c5e.getTime())) {
+                cp.setText("Fifth Period");
+            }
+            if(x.after(c6b.getTime())&&x.before(c6e.getTime())) {
+                cp.setText("Sixth Period");
+            }
+            if(x.after(c7b.getTime())&&x.before(c7e.getTime())) {
+                cp.setText("Seventh Period");
+            }
+            if(x.after(c8b.getTime())&&x.before(c8e.getTime())) {
+                cp.setText("Eighth Period");
+            }
+
+        }
+        catch (ParseException e) {
+
+        }
         // Example of a call to a native method
         final Button portalact = (Button) findViewById(R.id.portol);
         portalact.setOnClickListener(new View.OnClickListener() {
@@ -42,10 +166,7 @@ public class MainActivity extends Activity {
 
         });
 
-        final TextView cp=(TextView)findViewById(R.id.currper);
-        SimpleDateFormat df = new SimpleDateFormat("HH:mm");
 
-        String formattedDate = df.format(Calendar.getInstance().getTime());
     }
 
     /**
