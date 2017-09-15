@@ -197,4 +197,10 @@ public class MainActivity extends Activity {
     static {
         System.loadLibrary("native-lib");
     }
+
+    @Override
+    protected void onResume() {
+         super.onResume();
+         this.recreate();
+    }
 }
