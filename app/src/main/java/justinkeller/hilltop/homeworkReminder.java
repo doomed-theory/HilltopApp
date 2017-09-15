@@ -32,7 +32,7 @@ String myRemTime;
                 Manifest.permission.WRITE_CALENDAR)
                 != PackageManager.PERMISSION_GRANTED) {
 
-            // Should we show an explanation?
+            Log.d("true","explanation");
             if (ActivityCompat.shouldShowRequestPermissionRationale(this,
                     Manifest.permission.WRITE_CALENDAR)) {
                 Log.d("true",   "granted");
