@@ -120,7 +120,7 @@ public class MainActivity extends Activity {
                 cp.setText("Second Period");
                 Log.i("TIME", "second period ");
             }
-          else  if(x.after(cmb.getTime())&&x.before(cme.getTime())) {
+          else  if(x.after(ccb.getTime())&&x.before(cce.getTime())) {
                 cp.setText("Community Meeting");
             }
             else   if(x.after(c3b.getTime())&&x.before(c3e.getTime())) {
