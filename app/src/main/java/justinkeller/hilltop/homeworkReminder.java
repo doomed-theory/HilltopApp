@@ -30,15 +30,10 @@ String myRemTime;
         final EditText period=findViewById(R.id.period);
         final EditText hwcontent=findViewById(R.id.hwcontent);
         if (ContextCompat.checkSelfPermission(getApplicationContext(),
-                Manifest.permission.WRITE_CALENDAR)
-                != PackageManager.PERMISSION_GRANTED) {
+                Manifest.permission.WRITE_CALENDAR) != PackageManager.PERMISSION_GRANTED) {
             ActivityCompat.requestPermissions(this, new String[]{Manifest.permission.WRITE_CALENDAR}, 1);
             ActivityCompat.requestPermissions(this, new String[]{Manifest.permission.READ_CALENDAR}, 1);
             Log.d("true","explanation");
-            if (ActivityCompat.shouldShowRequestPermissionRationale(this,
-                    Manifest.permission.WRITE_CALENDAR)) {
-                Log.d("true",   "granted");
-            } else {}
         }
         sb.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
