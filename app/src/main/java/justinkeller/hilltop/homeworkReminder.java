@@ -21,6 +21,7 @@ public class homeworkReminder extends Activity {
 String myRemTime;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_homework_reminder);
         final SharedPreferences prefs = PreferenceManager.getDefaultSharedPreferences(this);
@@ -31,7 +32,8 @@ String myRemTime;
         if (ContextCompat.checkSelfPermission(getApplicationContext(),
                 Manifest.permission.WRITE_CALENDAR)
                 != PackageManager.PERMISSION_GRANTED) {
-
+            ActivityCompat.requestPermissions(this, new String[]{Manifest.permission.WRITE_CALENDAR}, 1);
+            ActivityCompat.requestPermissions(this, new String[]{Manifest.permission.READ_CALENDAR}, 1);
             Log.d("true","explanation");
             if (ActivityCompat.shouldShowRequestPermissionRationale(this,
                     Manifest.permission.WRITE_CALENDAR)) {
