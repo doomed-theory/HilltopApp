@@ -201,6 +201,11 @@ public class MainActivity extends Activity {
     @Override
     protected void onResume() {
          super.onResume();
-         this.recreate();
+         this.onCreate(null);
+    }
+    @Override
+    protected void onPause() {
+        super.onPause();
+        System.gc();
     }
 }
