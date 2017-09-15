@@ -1,29 +1,19 @@
 package justinkeller.hilltop;
-
+import android.app.Activity;
+import android.content.SharedPreferences;
 import android.os.Bundle;
-import android.support.design.widget.FloatingActionButton;
-import android.support.design.widget.Snackbar;
-import android.support.v7.app.AppCompatActivity;
-import android.support.v7.widget.Toolbar;
-import android.view.View;
+import android.preference.PreferenceManager;
 
-public class homeworkReminder extends AppCompatActivity {
+public class homeworkReminder extends Activity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_homework_reminder);
-        Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
-        setSupportActionBar(toolbar);
+        final SharedPreferences prefs = PreferenceManager.getDefaultSharedPreferences(this);
+        //final String myreminderTime=prefs.getString("homeTime", "17:00:00");  //error???
 
-        FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
-        fab.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
-                        .setAction("Action", null).show();
-            }
-        });
+        /* to do: add assignment textbox, add assignment textbox input to calendar along with homeTime */
     }
 
 }

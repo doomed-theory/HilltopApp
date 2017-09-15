@@ -26,6 +26,36 @@
         android:layout_below="@+id/configurl"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="15dp"
-        android:text="Submit" />
+        android:text="download" />
+
+    <EditText
+        android:id="@+id/timeinput"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="time"
+        android:layout_below="@+id/hometimesman"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="74dp"
+        android:layout_marginTop="16dp" />
+
+    <TextView
+        android:id="@+id/hometimesman"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="27dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="What time do you get home?"
+        android:layout_below="@+id/subbutton"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:id="@+id/submittime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Enter Time"
+        android:layout_below="@+id/timeinput"
+        android:layout_alignStart="@+id/subbutton" />
 
 </RelativeLayout>

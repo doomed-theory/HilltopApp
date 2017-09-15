@@ -4,6 +4,7 @@ import android.annotation.SuppressLint;
 import android.app.Activity;
 import android.icu.util.Calendar;
 import android.os.Bundle;
+import android.util.Log;
 import android.widget.Button;
 import android.widget.TextView;
 import android.view.View;
@@ -20,7 +21,7 @@ public class MainActivity extends Activity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         String p1b="08:30:00";
-        String p1e="19:10:00";
+        String p1e="09:10:00";
         String p2b="09:10:00";
         String p2e="09:50:00";
         String pcb="09:50:00";
@@ -39,7 +40,7 @@ public class MainActivity extends Activity {
         String p7e="14:40:00";
         String p8b="14:40:00";
         String p8e="15:20:00";
-        final TextView cp=(TextView)findViewById(R.id.currper);
+        TextView cp=(TextView)findViewById(R.id.currper);
         try {
             Date d1b=new SimpleDateFormat("HH:mm:ss").parse(p1b);
             Date d1e=new SimpleDateFormat("HH:mm:ss").parse(p1e);
@@ -61,7 +62,6 @@ public class MainActivity extends Activity {
             Date d7e=new SimpleDateFormat("HH:mm:ss").parse(p7e);
             Date d8b=new SimpleDateFormat("HH:mm:ss").parse(p8b);
             Date d8e=new SimpleDateFormat("HH:mm:ss").parse(p8e);
-
             Calendar c1b=Calendar.getInstance();
             Calendar c1e=Calendar.getInstance();
             Calendar c2b=Calendar.getInstance();
@@ -103,35 +103,45 @@ public class MainActivity extends Activity {
             c8b.setTime(d8b);
             c8e.setTime(d8e);
             SimpleDateFormat df = new SimpleDateFormat("HH:mm");
-            Date x=Calendar.getInstance().getTime();
+            Date badx=Calendar.getInstance().getTime(); //SHOULD NOT BE LONG!!!!!!!
+            SimpleDateFormat fmt=new SimpleDateFormat("HH:mm:ss");
+            String form=fmt.format(new Date());
+            Date currdate=new SimpleDateFormat("HH:mm:ss").parse(form);
+            Calendar setCal=Calendar.getInstance();
+            setCal.setTime(currdate);
+            Date x=setCal.getTime();
+            Log.i("CURRTIME", form);
+            Log.i("begin time area","what time is it");
+            //TODO: UPDATE TIME ON RESUME
             if(x.after(c1b.getTime())&&x.before(c1e.getTime())) {
                 cp.setText("First Period");
             }
-            if(x.after(c2b.getTime())&&x.before(c2e.getTime())) {
+           else if(x.after(c2b.getTime())&&x.before(c2e.getTime())) {
                 cp.setText("Second Period");
+                Log.i("TIME", "second period ");
             }
-            if(x.after(cmb.getTime())&&x.before(cme.getTime())) {
+          else  if(x.after(cmb.getTime())&&x.before(cme.getTime())) {
                 cp.setText("Community Meeting");
             }
-            if(x.after(c3b.getTime())&&x.before(c3e.getTime())) {
+            else   if(x.after(c3b.getTime())&&x.before(c3e.getTime())) {
                 cp.setText("Third Period");
             }
-            if(x.after(c4b.getTime())&&x.before(c4e.getTime())) {
+            else  if(x.after(c4b.getTime())&&x.before(c4e.getTime())) {
                 cp.setText("Fourth Period");
             }
-            if(x.after(cmb.getTime())&&x.before(cme.getTime())) {
+            else  if(x.after(cmb.getTime())&&x.before(cme.getTime())) {
                 cp.setText("Mentor Period");
             }
-            if(x.after(c5b.getTime())&&x.before(c5e.getTime())) {
+            else      if(x.after(c5b.getTime())&&x.before(c5e.getTime())) {
                 cp.setText("Fifth Period");
             }
-            if(x.after(c6b.getTime())&&x.before(c6e.getTime())) {
+            else   if(x.after(c6b.getTime())&&x.before(c6e.getTime())) {
                 cp.setText("Sixth Period");
             }
-            if(x.after(c7b.getTime())&&x.before(c7e.getTime())) {
+            else  if(x.after(c7b.getTime())&&x.before(c7e.getTime())) {
                 cp.setText("Seventh Period");
             }
-            if(x.after(c8b.getTime())&&x.before(c8e.getTime())) {
+            else  if(x.after(c8b.getTime())&&x.before(c8e.getTime())) {
                 cp.setText("Eighth Period");
             }
 
