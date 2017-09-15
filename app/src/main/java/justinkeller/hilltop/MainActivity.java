@@ -175,7 +175,7 @@ public class MainActivity extends Activity {
             }
 
         });
-        final Button hwbutton=findViewById(R.id.hwremind)
+        final Button hwbutton=findViewById(R.id.hwremind);
         hwbutton.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
                 Intent hwintent=new Intent(getApplicationContext(),homeworkReminder.class);
