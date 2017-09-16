@@ -183,7 +183,14 @@ public class MainActivity extends Activity {
             }
 
         });
+        final Button birthday=findViewById(R.id.birthdays);
+        birthday.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) {
+                Intent bdayint=new Intent(getApplicationContext(),Birthday.class);
+                startActivity(bdayint);
+            }
 
+        });
 
     }
 

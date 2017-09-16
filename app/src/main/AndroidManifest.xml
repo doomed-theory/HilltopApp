@@ -3,8 +3,8 @@
     package="justinkeller.hilltop">
 
     <uses-permission android:name="android.permission.INTERNET" />
-    <uses-permission android:name="android.permission.READ_CALENDAR"/>
-    <uses-permission android:name="android.permission.WRITE_CALENDAR"/>
+    <uses-permission android:name="android.permission.READ_CALENDAR" />
+    <uses-permission android:name="android.permission.WRITE_CALENDAR" />
 
     <application
         android:allowBackup="true"
@@ -32,6 +32,7 @@
             android:name=".homeworkReminder"
             android:label="@string/title_activity_homework_reminder"
             android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".Birthday" />
     </application>
 
 </manifest>
