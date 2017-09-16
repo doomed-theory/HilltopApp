@@ -104,7 +104,7 @@ public class homeworkReminder extends Activity {
         ContentResolver cr2 = getContentResolver();
         ContentValues values2 = new ContentValues();
         values2.put(Reminders.MINUTES, 5);
-        values2.put(Reminders.EVENT_ID, 1);
+        values2.put(Reminders.EVENT_ID, eventID);
         values2.put(Reminders.METHOD, Reminders.METHOD_ALERT);
         try {
             Uri uri = cr2.insert(Reminders.CONTENT_URI, values2);
