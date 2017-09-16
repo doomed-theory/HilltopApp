@@ -1,11 +1,8 @@
 package justinkeller.hilltop;
 
-import android.Manifest;
 import android.app.Activity;
 import android.os.Bundle;
-import android.support.v4.content.ContextCompat;
 import android.webkit.WebView;
-import android.view.Window;
 import android.widget.Toast;
 import android.webkit.WebViewClient;
 import java.util.HashMap;

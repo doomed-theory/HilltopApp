@@ -1,6 +1,5 @@
 package justinkeller.hilltop;
 import android.app.Activity;
-import android.app.Service;
 import android.content.SharedPreferences;
 import android.icu.text.SimpleDateFormat;
 import android.os.Bundle;
@@ -22,7 +21,6 @@ import android.util.Log;
 import android.app.AlertDialog;
 import android.content.DialogInterface;
 import android.provider.CalendarContract.*;
-import android.provider.CalendarContract;
 import android.content.ContentResolver;
 import android.database.Cursor;
 import android.os.Build;
@@ -41,8 +39,6 @@ public class homeworkReminder extends Activity {
         final EditText hwcontent = findViewById(R.id.hwcontent);
         if (ContextCompat.checkSelfPermission(getApplicationContext(), Manifest.permission.WRITE_CALENDAR) != PackageManager.PERMISSION_GRANTED) {
             ActivityCompat.requestPermissions(this, new String[]{Manifest.permission.WRITE_CALENDAR}, 1);
-            //ActivityCompat.requestPermissions(this, new String[]{Manifest.permission.READ_CALENDAR}, 1);
-
         }
         sb.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
@@ -96,7 +92,7 @@ public class homeworkReminder extends Activity {
         long eventID = 0;
         try {
             Uri uri = cr.insert(Events.CONTENT_URI, values);
-            eventID = Long.parseLong(uri.getLastPathSegment());
+            eventID = Long.parseLong(uri.getLastPathSegment()); //in that case, fail
         } catch (java.lang.SecurityException e) {
             e.printStackTrace(); //should never get here; crash app if it does
         }
