@@ -74,7 +74,7 @@ public class homeworkReminder extends Activity {
         int hour = Integer.parseInt(myRemTime.split(":")[0]);
         int minute = Integer.parseInt(myRemTime.split(":")[1]);
         Log.w("HillTop Time year", Integer.toString(year));
-        Log.w("HillTop Time month", Integer.toString(month));
+        Log.w("HillTop Time month", Integer.toString(month+1));
         Log.w("HillTop Time day", Integer.toString(day));
         Log.w("HillTop Time hour", Integer.toString(hour));
         Log.w("HillTop Time minute", Integer.toString(minute));
