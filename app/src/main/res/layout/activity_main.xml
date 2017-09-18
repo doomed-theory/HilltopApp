@@ -6,16 +6,6 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context="justinkeller.hilltop.MainActivity">
-    <Button
-        android:id="@+id/birthdays"
-        style="@style/Widget.AppCompat.Button.Borderless"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Birthdays"
-        tools:layout_editor_absoluteX="16dp"
-        tools:layout_editor_absoluteY="91dp"
-        android:layout_below="@+id/portol"
-        android:layout_alignParentStart="true" />
 
     <Button
         android:id="@+id/portol"
@@ -35,9 +25,9 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Settings"
-        app:layout_constraintTop_toBottomOf="@+id/birthdays"
+        app:layout_constraintTop_toBottomOf="@+id/portol"
         tools:layout_editor_absoluteX="16dp"
-        android:layout_below="@+id/birthdays"
+        android:layout_below="@+id/portol"
         android:layout_alignParentStart="true" />
     <Button
         android:id="@+id/schedule"
