@@ -10,6 +10,7 @@ import android.widget.TextView;
 import android.view.View;
 import android.content.Intent;
 import android.icu.text.SimpleDateFormat;
+import android.net.Uri;
 
 import java.text.ParseException;
 import java.util.Date;
@@ -183,11 +184,16 @@ public class MainActivity extends Activity {
             }
 
         });
-        final Button birthday=findViewById(R.id.birthdays);
-        birthday.setOnClickListener(new View.OnClickListener() {
+
+
+        final Button websiteintent=findViewById(R.id.websiteintent);
+        websiteintent.setText("visit website");
+        websiteintent.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
-                Intent bdayint=new Intent(getApplicationContext(),Birthday.class);
-                startActivity(bdayint);
+                String url = "https://hilltopprep.org";
+                Intent intent = new Intent(Intent.ACTION_VIEW);
+                intent.setData(Uri.parse(url));
+                startActivity(intent);
             }
 
         });
