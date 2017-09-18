@@ -190,9 +190,8 @@ public class MainActivity extends Activity {
         websiteintent.setText("visit website");
         websiteintent.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
-                String url = "https://hilltopprep.org";
-                Intent intent = new Intent(Intent.ACTION_VIEW);
-                intent.setData(Uri.parse(url));
+                String ttturl = "https://hilltopprep.org";
+                Intent intent = new Intent(Intent.ACTION_VIEW,Uri.parse("http://hilltopprep.org"));
                 startActivity(intent);
             }
 
