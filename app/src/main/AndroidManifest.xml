@@ -34,7 +34,6 @@
             android:name=".homeworkReminder"
             android:label="@string/title_activity_homework_reminder"
             android:theme="@style/AppTheme.NoActionBar" />
-        <activity android:name=".Birthday" />
     </application>
 
 </manifest>
