@@ -159,6 +159,20 @@ public class MainActivity extends Activity {
 
             }
         });
+        final Button htinsta=(Button) findViewById(R.id.HTInsta);
+        htinsta.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) {
+                Uri uri=Uri.parse("http://instagram.com/_u/hilltopprepschool");
+                Intent ig=new Intent(Intent.ACTION_VIEW,uri);
+                ig.setPackage("com.instagram.android");
+                try {
+                    startActivity(ig);
+                }
+                catch (Exception e) {
+                    startActivity(new Intent(Intent.ACTION_VIEW,Uri.parse("http://instagram.com/hilltopprepschool")));
+                }
+            }
+        });
 
         final Button settingsact = (Button) findViewById(R.id.settings);
         settingsact.setOnClickListener(new View.OnClickListener() {
