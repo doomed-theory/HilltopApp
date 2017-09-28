@@ -173,6 +173,14 @@ public class MainActivity extends Activity {
                 }
             }
         });
+        final Button calbutton=(Button) findViewById(R.id.Calendar);
+        calbutton.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) {
+                Uri uri=Uri.parse("http://hilltopprep.org/calendar");
+                startActivity(new Intent(Intent.ACTION_VIEW,Uri.parse("http://hilltopprep.org/calendar")));
+            }
+        });
+
 
         final Button settingsact = (Button) findViewById(R.id.settings);
         settingsact.setOnClickListener(new View.OnClickListener() {
