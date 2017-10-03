@@ -22,7 +22,7 @@ public class homeworkReminderTest {
 
     @Test
     public void onCreate() throws Exception {
-        assertNotNull(new homeworkReminder().myRemTime);
+        assertNotNull(new homeworkReminder().getMyRemTime());
     }
 
     @Test

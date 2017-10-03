@@ -1,8 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context="justinkeller.hilltop.homeworkReminder">
@@ -11,12 +9,13 @@
         android:layout_width="150dp"
         android:layout_height="50dp"
         android:inputType="text"
-        android:text="math"
+        android:text="@string/math"
         android:textAlignment="center"
         android:id="@+id/period"
         android:layout_marginTop="147dp"
         android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true" />
+        android:layout_centerHorizontal="true"
+        tools:ignore="LabelFor" />
 
     <EditText
         android:id="@+id/hwcontent"
@@ -24,10 +23,12 @@
         android:layout_height="50dp"
         android:layout_marginTop="37dp"
         android:inputType="text"
-        android:text="Homework"
+        android:text="@string/homework"
         android:textAlignment="center"
         android:layout_below="@+id/period"
-        android:layout_alignStart="@+id/period" />
+        android:layout_alignStart="@+id/period"
+        tools:ignore="LabelFor"
+        />
 
     <Button
         android:id="@+id/hwsub"
@@ -37,7 +38,9 @@
         android:layout_below="@+id/hwcontent"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="28dp"
-        android:text="Enter homework" />
+        android:text="@string/enter_homework"
+        android:drawable="@color/lightblue"
+        />
 
     <TextView
         android:id="@+id/textView2"
@@ -46,7 +49,7 @@
         android:layout_above="@+id/hwcontent"
         android:layout_centerHorizontal="true"
         android:layout_marginBottom="61dp"
-        android:text="Subject"
+        android:text="@string/subject"
         android:textSize="24sp" />
 
     <TextView
@@ -56,7 +59,7 @@
         android:layout_below="@+id/period"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="12dp"
-        android:text="Homework"
+        android:text="@string/homework2"
         android:textSize="24sp" />
 
 </RelativeLayout>
