@@ -189,10 +189,9 @@
     <string name="_12_40_1_20_fifth_period">12:40-1:20: Fifth Period</string>
     <string name="_1_20_2_00_sixth_period">1:20-2:00: Sixth Period</string>
     <string name="_2_00_2_40_seventh_period">2:00-2:40 Seventh Period</string>
-    <string name="_2_40_3_20_eighth_period_not_on_wednesday">2:40-3:20 Eighth Period (not on Wednesday)</string>
+    <string name="_2_40_3_20_eighth_period_not_on_wednesday">2:40–3:20 Eighth Period (not on Wednesday)</string>
     <string name="please_enter_configuration_url">Please enter configuration URL</string>
     <string name="download">download</string>
     <string name="what_time_do_you_get_home">What time do you get home?</string>
     <string name="enter_time">Enter Time</string>
-    <string name="portal">https://webapps.pcrsoft.com/clue/Student-Portal-Login/11552?returnUrl=https%3a%2f%2fwebapps.pcrsoft.com%2fclue%2fStudent-Portal-Home%2f11553</string>
-</resources>
+    </resources>

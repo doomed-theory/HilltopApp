@@ -28,7 +28,7 @@ public class PortalAct extends Activity {
         });
         HashMap<String, String> h = new HashMap<>();
         h.put("useragent", "Hill Top Android App");
-        wb.loadUrl(getString(R.string.portal), h);
+        wb.loadUrl("https://webapps.pcrsoft.com/clue/Student-Portal-Login/11552?returnUrl=https%3a%2f%2fwebapps.pcrsoft.com%2fclue%2fStudent-Portal-Home%2f11553", h);
 
 
     }
