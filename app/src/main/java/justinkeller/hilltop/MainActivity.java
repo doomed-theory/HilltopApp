@@ -198,6 +198,16 @@ public class MainActivity extends Activity {
             }
 
         });
+        final Button credbutton = findViewById(R.id.credits);
+        credbutton.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) {
+                Intent cintent = new Intent(getApplicationContext(), credits.class);
+                startActivity(cintent);
+            }
+
+        });
+
+        //credits
 
 
         final Button websiteintent = findViewById(R.id.websiteintent);

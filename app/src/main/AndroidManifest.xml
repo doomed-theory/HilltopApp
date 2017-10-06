@@ -14,26 +14,32 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".MainActivity">
+        <activity android:name=".MainActivity"
+            android:screenOrientation="portrait">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".PortalAct" />
+        <activity android:name=".PortalAct"
+            />
         <activity
             android:name=".SettingsActivity"
-            android:label="@string/title_activity_settings" />
+            android:label="@string/title_activity_settings"         android:screenOrientation="portrait"/>
         <activity
             android:name=".periodTimes"
             android:label="@string/title_activity_period_times"
-            android:theme="@style/AppTheme.NoActionBar" />
+            android:theme="@style/AppTheme.NoActionBar"
+            android:screenOrientation="portrait"
+            />
         <activity
             android:name=".homeworkReminder"
             android:label="@string/title_activity_homework_reminder"
-            android:theme="@style/AppTheme.NoActionBar" />
-        <activity android:name=".credits"></activity>
+            android:theme="@style/AppTheme.NoActionBar"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".credits"
+            android:screenOrientation="portrait"/>
     </application>
 
 </manifest>

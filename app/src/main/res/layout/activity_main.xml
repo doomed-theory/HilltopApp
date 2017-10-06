@@ -113,5 +113,17 @@
         android:paddingStart="5sp"
         android:paddingEnd="5sp"
         />
+    <Button
+        android:id="@+id/credits"
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:drawable="@color/lightblue"
+        android:text="@string/credits"
+        android:textStyle="bold"
+        android:paddingStart="5sp"
+        android:paddingEnd="5sp"
+        android:layout_below="@+id/Calendar"
+        android:layout_alignEnd="@+id/settings" />
 
 </RelativeLayout>
