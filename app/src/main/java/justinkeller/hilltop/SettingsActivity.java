@@ -18,10 +18,8 @@ public class SettingsActivity extends Activity implements OnSharedPreferenceChan
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.settings_activity);
-        final EditText currentURL = findViewById(R.id.configurl);
         final EditText homeTime = findViewById(R.id.timeinput);
         final SharedPreferences prefs = PreferenceManager.getDefaultSharedPreferences(this);
-        currentURL.setText(prefs.getString("configURL", "http://hilltopprep.org"));
         homeTime.setText(prefs.getString("homeTime", "17:00:00"));
         Button submitTime = findViewById(R.id.submittime);
      /*     Button submit=findViewById(R.id.subbutton);
