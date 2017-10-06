@@ -5,90 +5,103 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_alignParentStart="true"
+    android:background="@color/lightblue"
         >
         <TextView
             android:id="@+id/pause"
             android:layout_width="match_parent"
-            android:layout_height="90dp"
+            android:layout_height="90sp"
             android:text=""
-            android:textAlignment="center" />
+            android:textAlignment="center"
+            android:textStyle="bold"/>
         <TextView
             android:id="@+id/firstm"
             android:layout_width="match_parent"
-            android:layout_height="30dp"
+            android:layout_height="30sp"
             android:layout_below="@+id/pause"
             android:text="@string/_8_30_9_10_first_period"
-            android:textAlignment="center" />
+            android:textAlignment="center"
+            android:textStyle="bold"/>
 
         <TextView
             android:id="@+id/secondm"
             android:layout_width="match_parent"
-            android:layout_height="30dp"
+            android:layout_height="30sp"
             android:layout_below="@+id/firstm"
             android:text="@string/_9_10_9_50_second_period"
-            android:textAlignment="center" />
+            android:textAlignment="center"
+            android:textStyle="bold"/>
 
         <TextView
             android:id="@+id/cmtng"
             android:layout_width="match_parent"
-            android:layout_height="30dp"
+            android:layout_height="30sp"
             android:layout_below="@+id/secondm"
             android:text="@string/_9_50_10_10_community_meeting"
-            android:textAlignment="center" />
+            android:textAlignment="center"
+            android:textStyle="bold"/>
 
         <TextView
             android:id="@+id/thirdm"
             android:layout_width="match_parent"
-            android:layout_height="30dp"
+            android:layout_height="30sp"
             android:layout_below="@+id/cmtng"
             android:text="@string/_10_10_10_50_third_period"
-            android:textAlignment="center" />
+            android:textAlignment="center"
+            android:textStyle="bold"
+            />
 
         <TextView
             android:id="@+id/fourthm"
             android:layout_width="match_parent"
-            android:layout_height="30dp"
+            android:layout_height="30sp"
             android:layout_below="@+id/thirdm"
             android:text="@string/_10_50_11_30_fourth_period"
-            android:textAlignment="center" />
+            android:textAlignment="center"
+            android:textStyle="bold"/>
 
         <TextView
             android:id="@+id/mentorm"
             android:layout_width="match_parent"
-            android:layout_height="30dp"
+            android:layout_height="30sp"
             android:layout_below="@+id/fourthm"
             android:text="@string/_11_30_12_40_mentor_and_lunch"
-            android:textAlignment="center" />
+            android:textAlignment="center"
+            android:textStyle="bold"/>
 
         <TextView
             android:id="@+id/fifthm"
             android:layout_width="match_parent"
-            android:layout_height="30dp"
+            android:layout_height="30sp"
             android:layout_below="@+id/mentorm"
             android:text="@string/_12_40_1_20_fifth_period"
-            android:textAlignment="center" />
+            android:textAlignment="center"
+            android:textStyle="bold"/>
 
         <TextView
             android:id="@+id/sixthm"
             android:layout_width="match_parent"
-            android:layout_height="30dp"
+            android:layout_height="30sp"
             android:layout_below="@+id/fifthm"
             android:text="@string/_1_20_2_00_sixth_period"
-            android:textAlignment="center" />
+            android:textAlignment="center"
+            android:textStyle="bold"/>
 
         <TextView
             android:id="@+id/seventhm"
             android:layout_width="match_parent"
-            android:layout_height="30dp"
+            android:layout_height="30sp"
             android:layout_below="@+id/sixthm"
             android:text="@string/_2_00_2_40_seventh_period"
-            android:textAlignment="center" />
+            android:textAlignment="center"
+            android:textStyle="bold"/>
 
         <TextView
             android:id="@+id/eightm"
             android:layout_width="match_parent"
-            android:layout_height="30dp"
+            android:layout_height="30sp"
             android:layout_below="@+id/seventhm"
             android:text="@string/_2_40_3_20_eighth_period_not_on_wednesday"
-            android:textAlignment="center" />
+            android:textAlignment="center"
+            android:textStyle="bold"/>
     </RelativeLayout>

@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/lightblue"
     tools:context="justinkeller.hilltop.MainActivity">
 
     <Button
@@ -12,13 +12,12 @@
         style="@style/Widget.AppCompat.Button.Borderless"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/access_portal"
-        tools:layout_editor_absoluteX="16dp"
-        tools:layout_editor_absoluteY="16dp"
-        android:layout_marginTop="29dp"
         android:layout_below="@+id/currper"
-        android:layout_alignParentStart="true"
+        android:layout_marginTop="29sp"
         android:drawable="@color/lightblue"
+        android:text="@string/access_portal"
+        android:textStyle="bold"
+        android:layout_centerHorizontal="true"
         />
 
     <Button
@@ -26,36 +25,40 @@
         style="@style/Widget.AppCompat.Button.Borderless"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/portol"
+        android:drawable="@color/lightblue"
         android:text="@string/settings"
         app:layout_constraintTop_toBottomOf="@+id/portol"
-        tools:layout_editor_absoluteX="16dp"
-        android:layout_below="@+id/portol"
-        android:layout_alignParentStart="true"
-        android:drawable="@color/lightblue"
+        android:textStyle="bold"
         />
+
     <Button
         android:id="@+id/schedule"
         style="@style/Widget.AppCompat.Button.Borderless"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_below="@+id/settings"
+        android:drawable="@color/lightblue"
         android:text="@string/schedule"
         app:layout_constraintTop_toBottomOf="@+id/settings"
-        tools:layout_editor_absoluteX="16dp"
-        android:layout_below="@+id/settings"
-        android:layout_alignParentStart="true"
-        android:drawable="@color/lightblue"
+        tools:layout_editor_absoluteX="16sp"
+        android:textStyle="bold"
+        android:layout_centerHorizontal="true"
         />
+
     <Button
         android:id="@+id/hwremind"
         style="@style/Widget.AppCompat.Button.Borderless"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_below="@+id/schedule"
+        android:drawable="@color/lightblue"
         android:text="@string/homework_reminder"
         app:layout_constraintTop_toBottomOf="@+id/schedule"
-        tools:layout_editor_absoluteX="16dp"
-        android:layout_below="@+id/schedule"
-        android:layout_alignParentStart="true"
-        android:drawable="@color/lightblue"
+        tools:layout_editor_absoluteX="16sp"
+        android:textStyle="bold"
+        android:layout_centerHorizontal="true"
         />
 
     <Button
@@ -63,12 +66,13 @@
         style="@style/Widget.AppCompat.Button.Borderless"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignParentStart="true"
+        android:layout_centerHorizontal="true"
         android:layout_below="@+id/hwremind"
+        android:drawable="@color/lightblue"
         android:text="@string/visit_website"
         app:layout_constraintTop_toBottomOf="@+id/schedule"
-        tools:layout_editor_absoluteX="16dp"
-        android:drawable="@color/lightblue"
+        tools:layout_editor_absoluteX="16sp"
+        android:textStyle="bold"
         />
 
     <TextView
@@ -77,29 +81,37 @@
         android:layout_height="wrap_content"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="30dp"
+        android:layout_marginTop="30sp"
         android:text="@string/current_period"
         android:textColor="@android:color/holo_red_light"
-        android:textSize="16pt" />
+        android:textSize="16pt"
+        android:textStyle="bold"/>
 
     <Button
         android:id="@+id/HTInsta"
         style="@style/Widget.AppCompat.Button.Borderless"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/portol"
         android:layout_below="@+id/websiteintent"
         android:text="@string/hill_top_instagram"
-        android:layout_alignEnd="@+id/portol" />
+        android:textStyle="bold"
+        android:layout_centerHorizontal="true"
+        />
 
     <Button
         android:id="@+id/Calendar"
         style="@style/Widget.AppCompat.Button.Borderless"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/HTInsta"
-        android:text="@string/hill_top_calendar"
         android:layout_alignEnd="@+id/HTInsta"
+        android:layout_below="@+id/HTInsta"
         android:drawable="@color/lightblue"
+        android:text="@string/hill_top_calendar"
+        android:textStyle="bold"
+        android:layout_centerHorizontal="true"
+        android:paddingStart="5sp"
+        android:paddingEnd="5sp"
         />
 
 </RelativeLayout>

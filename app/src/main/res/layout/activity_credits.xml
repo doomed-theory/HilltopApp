@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="justinkeller.hilltop.credits">
+
+    <TextView
+        android:id="@+id/copyrighting"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:textSize="20sp"
+        android:textAlignment="center"
+        android:text="\n\n\n\n\nJustin Keller, C)PTE, ACMT, ACTC, ACSP  \n  Lead Developer, Project Manager\n\nMatthew Kleiner\n Developer\n\n Ryan Wellock\nChief Designer \n\n\n\nsource code copyright (c) Justin Keller unless otherwise specified Hill Top logo copytight (c) Hill Top Preparatory School "
+        android:layout_centerInParent="true"
+        tools:ignore="HardcodedText" />
+</RelativeLayout>
