@@ -83,7 +83,7 @@
         android:layout_centerHorizontal="true"
         android:layout_marginTop="30sp"
         android:text="@string/current_period"
-        android:textColor="@android:color/holo_red_light"
+        android:textColor="@color/darkblue"
         android:textSize="16pt"
         android:textStyle="bold"/>
 
