@@ -1,26 +1,22 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    android:orientation="vertical" android:layout_width="match_parent"
-    android:layout_height="match_parent">
-
-
-
-
-
-
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/lightblue"
+    android:orientation="vertical">
 
 
     <EditText
         android:id="@+id/timeinput"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:ems="10"
-        android:inputType="time"
-        android:layout_below="@+id/hometimesman"
         android:layout_alignParentEnd="true"
+        android:layout_below="@+id/hometimesman"
         android:layout_marginEnd="74dp"
         android:layout_marginTop="16dp"
+        android:ems="10"
+        android:inputType="time"
         tools:ignore="LabelFor"
 
         />
@@ -29,18 +25,20 @@
         android:id="@+id/hometimesman"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/timeinput"
+        android:layout_alignStart="@+id/timeinput"
         android:layout_marginTop="27dp"
         android:ems="10"
         android:text="@string/what_time_do_you_get_home"
-        android:layout_centerHorizontal="true"
-        />
+        android:textStyle="bold" />
 
     <Button
         android:id="@+id/submittime"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/enter_time"
         android:layout_below="@+id/timeinput"
-        android:layout_centerHorizontal="true"/>
+        android:layout_centerHorizontal="true"
+        android:background="@color/background"
+        android:text="@string/enter_time" />
 
 </RelativeLayout>
