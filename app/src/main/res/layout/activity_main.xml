@@ -98,13 +98,11 @@
         style="@style/Widget.AppCompat.Button.Borderless"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignEnd="@+id/portol"
-        android:layout_below="@+id/websiteintent"
-        android:layout_centerHorizontal="true"
         android:background="@color/background"
         android:text="@string/hill_top_instagram"
         android:textStyle="bold"
-        />
+        android:layout_below="@+id/websiteintent"
+        android:layout_centerHorizontal="true" />
 
     <Button
         android:id="@+id/Calendar"
